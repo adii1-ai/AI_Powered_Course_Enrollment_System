@@ -34,6 +34,7 @@
       "id": "40afa26c-197f-42d1-83fb-d59cbe2ef59b",
       "name": "Send an Email",
       "webhookId": "ddf4d758-631a-4e36-9d08-4cfbf8ab221a",
+      "retryOnFail": true,
       "credentials": {
         "smtp": {
           "id": "eYcVlduDCtngbqvP",
@@ -242,7 +243,8 @@
           "id": "TN1DW241XGHjapaD",
           "name": "Airtable Personal Access Token account"
         }
-      }
+      },
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -448,7 +450,8 @@
         -144
       ],
       "id": "f7807b81-71e8-4a55-89e7-2440066bff5d",
-      "name": "If"
+      "name": "If",
+      "onError": "continueRegularOutput"
     },
     {
       "parameters": {
@@ -1238,6 +1241,8 @@
       ],
       "id": "da4a784e-70b2-4083-8366-7b8838fd4fc9",
       "name": "Make a call",
+      "retryOnFail": true,
+      "maxTries": 2,
       "credentials": {
         "twilioApi": {
           "id": "3tfFFyTqGXffPlL1",
@@ -1372,7 +1377,7 @@
     "callerPolicy": "workflowsFromSameOwner",
     "executionTimeout": -1
   },
-  "versionId": "5edcafca-c31d-4885-837c-0342a184d52a",
+  "versionId": "b8fde94a-98a9-4c24-9c84-597af907c450",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "6b32c1644b7fccfa865023e24c0a95a15c3ced54bc0d2075ce7f93dd942776ae"
