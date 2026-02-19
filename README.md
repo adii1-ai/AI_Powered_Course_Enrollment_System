@@ -4,14 +4,25 @@
 
 - This system eliminates manual enrollment handling and replaces it with a multi-channel, AI-assisted automation pipeline.
 
+## Basic Flow of Automation
+
+Trigger
+   ↓
+Input Processing
+   ↓
+Decision
+   ↓
+Action
+
 ## 📌 Problem Statement
 
-- Educational institutes often rely on manual processes to:
+Educational institutes often rely on manual processes to:
 - Record student registrations
 - Send confirmation emails
 - Handle communication failures
 - Maintain student databases
-- These processes are:
+
+These processes are:
 - Time-consuming
 - Error-prone
 - Operationally inefficient
@@ -19,7 +30,7 @@
 
 ## 🎯 Solution Overview
 
-- This system automates the complete enrollment lifecycle:
+This system automates the complete enrollment lifecycle:
 - Student registers via institute portal
 - Data is validated and stored
 - Confirmation email is sent
@@ -29,7 +40,7 @@
 
 ## 🧠 Intelligent Failure Recovery
 
-- The AI agent analyzes delivery status and decides:
+The AI agent analyzes delivery status and decides:
 - Retry email
 - Send SMS fallback
 - Initiate automated phone call
@@ -65,7 +76,7 @@ Admin Alert (if required)
 
 ### Workflow Image
 
-![Workflow Diagram](images/workflow.png)
+![Workflow Diagram](Images/workflow.png)
 
 ## 🛠 Tech Stack
 
