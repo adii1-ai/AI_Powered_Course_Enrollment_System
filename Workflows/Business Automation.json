@@ -28,8 +28,8 @@
       "type": "n8n-nodes-base.emailSend",
       "typeVersion": 2.1,
       "position": [
-        1008,
-        -192
+        736,
+        -256
       ],
       "id": "40afa26c-197f-42d1-83fb-d59cbe2ef59b",
       "name": "Send an Email",
@@ -233,8 +233,8 @@
       "type": "n8n-nodes-base.airtable",
       "typeVersion": 2.1,
       "position": [
-        400,
-        -384
+        -16,
+        -256
       ],
       "id": "73fe712a-11f0-4346-b6f1-4b2c6d34dd12",
       "name": "Create or update a record",
@@ -379,8 +379,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        576,
-        -160
+        448,
+        -96
       ],
       "id": "a77ab0d5-75ca-443e-b169-7893a74ba6d7",
       "name": "Append or update row in sheet",
@@ -390,119 +390,6 @@
           "name": "Google Sheets account 2"
         }
       }
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "loose",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "a0a9aea9-d789-41e0-9f26-9a0bc841d364",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "data science",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "c10d1d31-15f4-405e-969c-591306b3acc5",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "Data Science",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "c77cac58-d4d5-4e61-91a3-bddbedc598ed",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "DATA SCIENCE",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "f3d407d9-bf6c-4aa5-af3d-b7ce618ef904",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "Data science",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            }
-          ],
-          "combinator": "or"
-        },
-        "looseTypeValidation": true,
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
-      "position": [
-        176,
-        -144
-      ],
-      "id": "f7807b81-71e8-4a55-89e7-2440066bff5d",
-      "name": "If",
-      "onError": "continueRegularOutput"
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "b32db6e2-2c6f-454e-8585-e40c3943b44f",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "Machine Learning",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "b6854fed-11e9-4812-a839-5e0f63e51f43",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "machine learning",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "bbb66dde-4442-4e43-9544-473ff8094de9",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "Machine learning",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            }
-          ],
-          "combinator": "or"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
-      "position": [
-        176,
-        32
-      ],
-      "id": "86553c65-5a35-41ad-a9ac-f420495f65ef",
-      "name": "If1"
     },
     {
       "parameters": {
@@ -629,8 +516,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        384,
-        16
+        640,
+        32
       ],
       "id": "a569f373-9f67-4dee-b0e9-39bf926970c8",
       "name": "Append or update row in sheet1",
@@ -766,7 +653,7 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        576,
+        784,
         192
       ],
       "id": "dbcb92c7-49c7-4189-8057-492f94f69d4d",
@@ -777,127 +664,6 @@
           "name": "Google Sheets account 2"
         }
       }
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "loose",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "0facd4bd-4969-4963-89a9-37fc1e5ad533",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "Data Analytics",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "8fbb3f6c-539a-45d1-894e-78f70579a4d3",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "data analytics",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "d3326114-a744-4a36-acb1-6f10b92a529d",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "Data analytics",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            }
-          ],
-          "combinator": "or"
-        },
-        "looseTypeValidation": true,
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
-      "position": [
-        176,
-        208
-      ],
-      "id": "ff471bf0-bf9e-420d-a546-9db65e631965",
-      "name": "If2"
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "c165b474-9f9c-48ce-8fdb-b90c97e249ff",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "Java Full Stack ",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "0c1e83ec-9849-4f39-b92c-d106d811eedc",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "java",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "d10535d1-6428-4b8b-9d35-2f249ae7902b",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "JAVA",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "52ed737d-e5cd-4d13-818d-aa0954bd7817",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "java full stack",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "963d51d3-e565-44f2-b951-a9bbb8beb1d2",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "Java full stack",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            }
-          ],
-          "combinator": "or"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
-      "position": [
-        176,
-        384
-      ],
-      "id": "9c3177a9-6a4f-4474-8fad-24d7172be897",
-      "name": "If3"
     },
     {
       "parameters": {
@@ -1024,7 +790,7 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        384,
+        640,
         368
       ],
       "id": "6a6ffa63-4391-4dac-9dfa-994b5b44bd19",
@@ -1035,57 +801,6 @@
           "name": "Google Sheets account 2"
         }
       }
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "992532d2-a952-47f2-a641-093c7ae568d9",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "MERN",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "957fc3b9-d9df-459b-8049-3aabce107626",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "mern",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            },
-            {
-              "id": "5f2db862-a04f-4c82-968e-962eb8fd253e",
-              "leftValue": "={{ $json.body.class }}",
-              "rightValue": "Mern",
-              "operator": {
-                "type": "string",
-                "operation": "equals"
-              }
-            }
-          ],
-          "combinator": "or"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
-      "position": [
-        176,
-        560
-      ],
-      "id": "502fb6cd-a5eb-4f8c-bc72-0a2658c352b7",
-      "name": "If4"
     },
     {
       "parameters": {
@@ -1213,8 +928,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        592,
-        544
+        432,
+        496
       ],
       "id": "c7ac1adc-feee-48e8-aaf1-27365cb05487",
       "name": "Append or update row in sheet4",
@@ -1236,7 +951,7 @@
       "type": "n8n-nodes-base.twilio",
       "typeVersion": 1,
       "position": [
-        1392,
+        1280,
         144
       ],
       "id": "da4a784e-70b2-4083-8366-7b8838fd4fc9",
@@ -1248,7 +963,159 @@
           "id": "3tfFFyTqGXffPlL1",
           "name": "Twilio account"
         }
-      }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "14055ec1-7acf-4ffa-9b56-d8208a5d8b2a",
+              "name": "=normalized_course",
+              "value": "={{$json.body.class.trim().toLowerCase()}}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -96,
+        480
+      ],
+      "id": "79e54235-8ec0-41c1-967f-8fb7126b0cc2",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.normalized_course }}",
+                    "rightValue": "data science",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "db974cc5-8b2f-4ac7-ae0b-4f77cebc457f"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "580e619f-a07a-4ce3-a27b-8869e537e7b1",
+                    "leftValue": "={{ $json.normalized_course }}",
+                    "rightValue": "machine learning",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "a958654a-e52f-4248-bdc3-ff1b688693df",
+                    "leftValue": "={{ $json.normalized_course }}",
+                    "rightValue": "data analytics",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "793c23a7-a6a0-42f9-bb31-fc479bf38709",
+                    "leftValue": "={{ $json.normalized_course }}",
+                    "rightValue": "java fullstack",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "5b39f894-64c8-430a-9804-943fafe7e864",
+                    "leftValue": "={{ $json.normalized_course }}",
+                    "rightValue": "mern",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        160,
+        144
+      ],
+      "id": "63dbd352-cb73-4ff6-9e16-8b766237e730",
+      "name": "Switch"
     }
   ],
   "pinData": {},
@@ -1262,27 +1129,7 @@
             "index": 0
           },
           {
-            "node": "If",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "If1",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "If2",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "If3",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "If4",
+            "node": "Edit Fields",
             "type": "main",
             "index": 0
           }
@@ -1300,7 +1147,29 @@
         ]
       ]
     },
-    "If": {
+    "Send an Email": {
+      "main": [
+        [
+          {
+            "node": "Make a call",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
       "main": [
         [
           {
@@ -1308,58 +1177,31 @@
             "type": "main",
             "index": 0
           }
-        ]
-      ]
-    },
-    "If1": {
-      "main": [
+        ],
         [
           {
             "node": "Append or update row in sheet1",
             "type": "main",
             "index": 0
           }
-        ]
-      ]
-    },
-    "If2": {
-      "main": [
+        ],
         [
           {
             "node": "Append or update row in sheet2",
             "type": "main",
             "index": 0
           }
-        ]
-      ]
-    },
-    "If3": {
-      "main": [
+        ],
         [
           {
             "node": "Append or update row in sheet3",
             "type": "main",
             "index": 0
           }
-        ]
-      ]
-    },
-    "If4": {
-      "main": [
+        ],
         [
           {
             "node": "Append or update row in sheet4",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Send an Email": {
-      "main": [
-        [
-          {
-            "node": "Make a call",
             "type": "main",
             "index": 0
           }
@@ -1377,7 +1219,7 @@
     "callerPolicy": "workflowsFromSameOwner",
     "executionTimeout": -1
   },
-  "versionId": "b8fde94a-98a9-4c24-9c84-597af907c450",
+  "versionId": "1daa74a0-0834-449f-a1f9-7e96be2f7fec",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "6b32c1644b7fccfa865023e24c0a95a15c3ced54bc0d2075ce7f93dd942776ae"
